@@ -1,9 +1,8 @@
 <?php
 namespace Lotiger\BaseClasses;
-use Lotiger\Contracts\RequestHas;
 use Lotiger\BaseClasses\RequestCommon;
 
-class Request extends RequestCommon implements RequestHas
+class Request extends RequestCommon
 {
     public function __construct(Array $paramters)
     {

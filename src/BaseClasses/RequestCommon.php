@@ -1,7 +1,8 @@
 <?php
 namespace Lotiger\BaseClasses;
+use Lotiger\Contracts\RequestHas;
 
-abstract class RequestCommon
+abstract class RequestCommon implements RequestHas
 {
     protected $paramters;
 

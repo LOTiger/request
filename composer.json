@@ -1,7 +1,7 @@
 {
     "name": "lotiger/request",
     "description": "a request package which can filter data from website",
-    "license": "0.1",
+    "license": "MIT",
     "authors": [
         {
             "name": "lotiger",

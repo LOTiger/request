@@ -5,15 +5,23 @@ class Paramters
 {
     protected $_dynamicArray;
  
-    public function __set($name, $value) {
-        $this->_dynamicArray[$name] = $value;
+    public function __set($key, $value)
+    {
+        $this->_dynamicArray[$key] = $value;
+    }
+
+    public function getOneVar(String $key)
+    {
+        return $this->_dynamicArray[$key] ?? null;
     }
  
-    public function getAllVars() {
+    public function getAllVars()
+    {
         return get_class_vars(__CLASS__);
     }
  
-    public function getDynamicArray(){
+    public function getDynamicArray()
+    {
         return $this->_dynamicArray;
     }
 }

@@ -2,6 +2,7 @@
 namespace Lotiger\BaseClasses;
 use Lotiger\BaseClasses\RequestCommon;
 use Lotiger\BaseClasses\Paramters;
+use Exception;
 
 class Get extends RequestCommon
 {
@@ -13,10 +14,10 @@ class Get extends RequestCommon
 
     public function get(String $key)
     {
-        if (!isset($this->paramters->$key)) {
+        if (!$this->paramters->getOneVar($key)) {
            throw new Exception("Type of Get Paramter {$key} does not exist", 10001);
         }
 
-        return $this->paramters->$key->value;
+        return $this->paramters->getOneVar($key)->value;
     }
 }

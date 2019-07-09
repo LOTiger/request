@@ -10,16 +10,7 @@ abstract class RequestCommon implements RequestHas
 
     public function all()
     {
-        $datas = array();
-        if (empty($this->paramters)) {
-            return $datas;
-        }
-
-        foreach($this->paramters as $paramter) {
-            $datas[$paramter->key] = $paramter->value;
-        }
-
-        return $datas;
+        return $this->paramters;
     }
 
     protected function generateParamters(Array $paramters)

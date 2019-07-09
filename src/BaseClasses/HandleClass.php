@@ -4,11 +4,11 @@ use Lotiger\Contracts\BaseHas;
 
 class HandleClass implements BaseHas
 {
-    protected $post;
-    protected $get;
-    protected $request;
-    protected $server;
-    protected $postInput;
+    public $post;
+    public $get;
+    public $request;
+    public $server;
+    public $postInput;
 
     public function post()
     {

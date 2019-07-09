@@ -14,10 +14,10 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Lotiger\\Request\\": "src/",
-            "Lotiger\\Request\\Contracts\\": "src/Contracts",
-            "Lotiger\\Request\\Exceptions\\": "src/Exceptions",
-            "Lotiger\\Request\\BaseClasses\\": "src/BaseClasses"
+            "Lotiger\\": "src/",
+            "Lotiger\\Contracts\\": "src/Contracts",
+            "Lotiger\\Exceptions\\": "src/Exceptions",
+            "Lotiger\\BaseClasses\\": "src/BaseClasses"
         }
     },
     "autoload-dev": {

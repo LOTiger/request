@@ -1,0 +1,28 @@
+{
+    "name": "lotiger/request",
+    "description": "a request package which can filter data from website",
+    "license": "0.1",
+    "authors": [
+        {
+            "name": "lotiger",
+            "email": "lotiger@97866.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Lotiger\\Request\\": "src/",
+            "Lotiger\\Request\\Contracts\\": "src/Contracts",
+            "Lotiger\\Request\\Exceptions\\": "src/Exceptions",
+            "Lotiger\\Request\\BaseClasses\\": "src/BaseClasses"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lotiger\\Request\\Tests\\": "tests/"
+        }
+    }
+}

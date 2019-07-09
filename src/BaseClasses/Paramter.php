@@ -19,6 +19,6 @@ class Paramter
 
     public function key()
     {
-        return $this->value;
+        return $this->key;
     }
 }

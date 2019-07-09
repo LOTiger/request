@@ -17,7 +17,7 @@ class HandleClass implements BaseHas
 
     public function get()
     {
-        return $this->pogetst;
+        return $this->get;
     }
 
     public function request()

@@ -1,12 +1,13 @@
 <?php
 namespace Lotiger\BaseClasses;
-use Lotiger\Contracts\RequestHas;
 use Lotiger\BaseClasses\RequestCommon;
+use Lotiger\BaseClasses\Paramters;
 
 class Server extends RequestCommon
 {
     public function __construct(Array $paramters)
     {
+        $this->paramters = new Paramters();
         $this->generateParamters($paramters);
     }
 

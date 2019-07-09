@@ -6,6 +6,8 @@ abstract class RequestCommon implements RequestHas
 {
     protected $paramters;
 
+    public function get(String $key){}
+
     public function all()
     {
         $datas = array();

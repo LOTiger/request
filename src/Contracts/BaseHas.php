@@ -1,6 +1,6 @@
 <?php
 namespace Lotiger\Contracts;
-interface RequestHas
+interface BaseHas
 {
     public function post();
     public function get();
